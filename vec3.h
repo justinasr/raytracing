@@ -27,7 +27,7 @@ Vec3 vec3_add3(Vec3 a, Vec3 b, Vec3 c);
 Vec3 vec3_sub(Vec3 a, Vec3 b);
 
 /*
-  Subtract vectors b and c from a, compoent by component
+  Subtract vectors b and c from a, component by component
 */
 Vec3 vec3_sub3(Vec3 a, Vec3 b, Vec3 c);
 
@@ -35,6 +35,12 @@ Vec3 vec3_sub3(Vec3 a, Vec3 b, Vec3 c);
   Multiply each component of vector by a constant
 */
 Vec3 vec3_mult(Vec3 a, double x);
+
+/*
+  Multiply each component of a vector with
+  corresponding component of b vector
+*/
+Vec3 vec3_mult_vec3(Vec3 a, Vec3 b);
 
 /*
   Divide each component of vector by a constant

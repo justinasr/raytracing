@@ -42,6 +42,14 @@ Vec3 vec3_mult(Vec3 a, double x) {
     return r;
 }
 
+Vec3 vec3_mult_vec3(Vec3 a, Vec3 b) {
+    Vec3 r;
+    r.x = a.x * b.x;
+    r.y = a.y * b.y;
+    r.z = a.z * b.z;
+    return r;
+}
+
 Vec3 vec3_div(Vec3 a, double x) {
     Vec3 r;
     r.x = a.x / x;

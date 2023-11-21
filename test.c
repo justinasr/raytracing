@@ -52,6 +52,13 @@ void test_vec3() {
     f_assert_eq(e.y, r.y);
     f_assert_eq(e.z, r.z);
 
+    // Multiplication with another vector
+    e = (Vec3){.x=6.15, .y=10.5, .z=15.05};
+    r = vec3_mult_vec3(a, b);
+    f_assert_eq(e.x, r.x);
+    f_assert_eq(e.y, r.y);
+    f_assert_eq(e.z, r.z);
+
     // Division
     e = (Vec3){.x=5.0, .y=8.333333, .z=11.666667};
     r = vec3_div(a, x);
